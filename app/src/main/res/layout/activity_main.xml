@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/main"
+    android:background="#FBFBFB">
+
+    <EditText
+        android:id="@+id/editTNum1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="0"
+        android:background="@color/white"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editTNum2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTNum1"
+        android:autofillHints="0"
+        android:background="@color/white"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/editTNum3"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTNum2"
+        android:autofillHints="0"
+        android:background="@color/white"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="153dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTNum3"
+        android:onClick="getColorVal"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/redVal"
+        app:layout_constraintBottom_toTopOf="@+id/editTNum1"
+        app:layout_constraintStart_toStartOf="@+id/editTNum1"
+        android:labelFor="@+id/editTNum1"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/bluVal"
+        app:layout_constraintBottom_toTopOf="@+id/editTNum2"
+        app:layout_constraintStart_toStartOf="@+id/editTNum2"
+        android:labelFor="@+id/editTNum2"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/grnVal"
+        app:layout_constraintBottom_toTopOf="@+id/editTNum3"
+        app:layout_constraintStart_toStartOf="@+id/editTNum3"
+        android:labelFor="@+id/editTNum3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

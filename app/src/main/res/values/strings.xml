@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Assignment</string>
+    <string name="redVal">RED VALUE</string>
+    <string name="bluVal">BLUE VALUE</string>
+    <string name="grnVal">GREEN VALUE</string>
+    <string name="btn">GENERATE</string>
+</resources>
